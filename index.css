@@ -62,7 +62,7 @@
 }
 
 .genetic-item {
-    min-height: 200px;
+    min-height: 100px;
     position: relative;
     margin-top: 3rem;
 }
