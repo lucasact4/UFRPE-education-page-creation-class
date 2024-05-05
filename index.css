@@ -62,13 +62,13 @@
 }
 
 .genetic-item {
-    height: 200px;
+    min-height: 200px;
     position: relative;
     margin-top: 3rem;
 }
 
 
-.genetic-item img {
+.genetic-item img.dino {
     height: 150px;
     position: absolute;
     top: 0;
@@ -78,7 +78,83 @@
     transition: height 0.3s, transform 0.3s, filter 0.3s;
 }
 
-.genetic-item img:hover {
+.genetic-item img.dino:hover {
     height: 170px;
     filter: drop-shadow(0 0 0.2rem rgb(0, 0, 0));
+}
+
+
+
+
+.itemLabel {
+    flex: 1;
+    padding-left: .5em;
+}
+
+.tamingTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+#contentwrap td, #contentwrap th {
+    color: #fff;
+}
+
+.paddedTable td {
+    padding: .5em;
+}
+
+.white {
+    color: #fff;
+}
+
+.tamingTable td {
+    background-color: #628a8c;
+    padding: .2em .5em;
+    border-bottom: 1px solid #336b6f;
+    border-collapse: separate;
+    transition: background-color .3s, color .3s;
+}
+
+.tamingTable th {
+    background-color: #628a8cb0;
+    padding: .2em .5em;
+    border-bottom: 1px solid #336b6f;
+    border-collapse: separate;
+    transition: background-color .3s, color .3s;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item-level-1 {
+    
+}
+
+.icon-stat {
+    width: 30px;
+}
+
+.melee-level-one {
+    width: 15% !important;
 }
