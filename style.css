@@ -68,10 +68,35 @@ button:hover {
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
 }
 
+.footer-rights {
+    color: rgba(24, 24, 24, 0.6);
+    font-weight: bold;
+    background-color: #FEAD0F;
+    font-size: 16px;
+}
+
+#link-deco-none {
+    text-decoration: none;
+}
+
 #changeColorBtn {
     transition: transform .3s;
 }
 
 #changeColorBtn:hover {
     transform: scale(0.9);
+}
+
+.edit-img-sung-jin-woo {
+    cursor: pointer;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
+    width: 150px;
+    position: fixed;
+    bottom: -3px;
+    right: -20px;
+    transition: bottom .2s;
+}
+
+.edit-img-sung-jin-woo:hover {
+    bottom: 0px;
 }
