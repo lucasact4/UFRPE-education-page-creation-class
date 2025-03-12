@@ -10,3 +10,12 @@ document.getElementById("changeColorBtn").addEventListener("click", function() {
     const colors = ["#ffb6b9", "#ffdfba", "#ffffba", "#baffc9", "#bae1ff"];
     document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
 });
+
+
+/* Adicionando Tooltip do bootstrap no HTML */
+document.addEventListener("DOMContentLoaded", function () {
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl);
+  });
+});

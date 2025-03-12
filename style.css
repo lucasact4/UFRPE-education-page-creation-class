@@ -1,39 +1,89 @@
-
+/* Resetando margens e paddings para evitar inconsistências entre navegadores */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /* Mantém o tamanho total do elemento considerando bordas e preenchimentos */
 }
+
+/* Removendo a decoração de links globalmente */
+a {
+    text-decoration: none !important;
+}
+
+/* Estilização geral do corpo da página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: Arial, sans-serif; /* Definindo fonte padrão */
+    background-color: #f5f5f5; /* Cor de fundo neutra */
+    color: #333; /* Cor do texto principal */
 }
+
+/* Cabeçalho da página */
 header {
-    background-color: #4CAF50;
+    background-color: #1E3053; /* Cor azul escuro para destaque */
     color: white;
     padding: 20px;
     text-align: center;
 }
-header ul {
-    list-style: none;
-    padding: 0;
+
+/* Seção explicativa da página */
+.explain-page {
+    text-align: center;
+    color: white;
+    background-color: #FEAD0F; /* Laranja vibrante para chamar atenção */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-header ul li {
+
+/* Estilização do menu de navegação */
+.menu {
+    list-style: none; /* Removendo os marcadores de lista */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Fundo semi-transparente */
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Itens do menu */
+.menu li {
     display: inline;
-    margin: 0 15px;
-    font-weight: bold;
 }
+
+/* Links dentro do menu */
+.menu li a {
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    margin: 2px;
+}
+
+/* Efeito ao passar o mouse nos links do menu */
+.menu li a:hover {
+    background-color: white;
+    color: #1E3053;
+}
+
+/* Conteúdo principal da página */
 main {
     padding: 20px;
 }
+
+/* Estilização das seções de conteúdo */
 section {
     background: rgb(226, 226, 226);
     padding: 15px;
     margin: 10px 0;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
 }
+
+/* Rodapé da página */
 footer {
     background-color: #222;
     color: white;
@@ -41,14 +91,18 @@ footer {
     padding: 15px;
     margin-top: 20px;
 }
+
+/* Estilização de links gerais */
 a {
-    color: #4CAF50;
-    text-decoration: none;
+    color: #4CAF50; /* Verde para destaque */
     font-weight: bold;
 }
+
 a:hover {
     text-decoration: underline;
 }
+
+/* Estilização de botões */
 button {
     background-color: #4CAF50;
     color: white;
@@ -59,15 +113,19 @@ button {
     border-radius: 5px;
     font-size: 16px;
 }
+
+/* Efeito hover nos botões */
 button:hover {
     background-color: #45a049;
 }
 
+/* Imagem da logo com sombra */
 .logo-com-sombra {
     width: 75px;
     filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.5));
 }
 
+/* Direitos do rodapé */
 .footer-rights {
     color: rgba(24, 24, 24, 0.6);
     font-weight: bold;
@@ -75,10 +133,12 @@ button:hover {
     font-size: 16px;
 }
 
+/* Link com remoção de decoração específica */
 #link-deco-none {
     text-decoration: none;
 }
 
+/* Botão com efeito de escala ao passar o mouse */
 #changeColorBtn {
     transition: transform .3s;
 }
@@ -87,6 +147,15 @@ button:hover {
     transform: scale(0.9);
 }
 
+/* Tooltip fixo na tela */
+.tooltip-sing {
+    position: fixed;
+    width: 100px;
+    bottom: 90px;
+    right: 10px;
+}
+
+/* Imagem editada com efeito de sombra e posição fixa */
 .edit-img-sung-jin-woo {
     cursor: pointer;
     filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.7));
@@ -97,6 +166,24 @@ button:hover {
     transition: bottom .2s;
 }
 
+/* Efeito hover na imagem */
 .edit-img-sung-jin-woo:hover {
     bottom: 0px;
+}
+
+/* Logo do rodapé com sombra leve */
+.logo-ufrpe-footer {
+    width: 50px;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.7));
+}
+
+.readme-container {
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f8f9fa;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
